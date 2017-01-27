@@ -24,7 +24,7 @@ class MainPage(Handler):
         self.render("rot_thirteen.html")
 
     def post(self):
-        user_input = self.request.get('input_text')
+        user_input = self.request.get('text')
         trans = string.maketrans(
                 "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
                 "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm")
