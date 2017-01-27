@@ -21,7 +21,7 @@ class Handler(webapp2.RequestHandler):
 
 class MainPage(Handler):
     def get(self):
-        self.render("rot_thirteen.html", items = items)
+        self.render("rot_thirteen.html")
 
     def post(self):
         user_input = self.request.get('input_text')
